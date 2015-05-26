@@ -1,0 +1,131 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <title>"Search Term" - DraperTV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="series.css" />
+    <link rel="stylesheet" href="livestreams.css" />
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="frame"></div> <!--screen frame of the iPhone 5 & 6-->
+    <header>
+      <div class="menu header-item"></div>
+      <a href="index.html">
+        <div class="logo header-item"></div>
+      </a>
+      <input type="search" placeholder="Search" class="search-box header-item hide-section"></input>
+      <div class="search header-item"></div>
+    </header>
+    <div class="menu-menu hide-section">
+      <a href="index.html"><h3 class="menu-item">Home</h3></a>
+      <a href="series.html"><h3 class="menu-item">Series</h3></a>
+      <a href="livestreams.html"><h3 class="menu-item">Livestreams</h3></a>
+      <a href="https://draperuniversity.com"><h3 class="menu-item">Draper University</h3></a>
+    </div>
+    <div class="main">
+      <div class="section-title">
+        <h1>"Search Term"</h1>
+        <h4>2 results</h4>
+      </div>
+      <div class="content">
+        <a href="#">
+          <img class="livestream-thumbnail "></img>
+          <div class="content-text livestream-text">
+            <div class="content-title">
+              <h3>Max Ventilla, Founder &amp; CEO of AltSchool</h3>
+            </div>
+            <div class="content-subtitle">
+              <h4>16 days ago</h4>
+            </div>
+          </div>
+        </a>
+        <div class="content-expand">
+          <div class="content-expand-header">
+            <div class="arrow"></div>
+            <p>About</p>
+          </div>
+          <div class="content-expand-content hide-section">
+            <p>
+              Max's career has focused on creatively using <span class="search-highlight">Search Term</span> technology to enrich daily life. He founded Krypteian Systems (acquired in 2001) and the social search company Aardvark (acquired by Google in 2010).</br></br> At Google, he was part of the founding team of Google+ and then served as the Head of Personalization across Google products. Max earned a bachelor's degree in Math and Physics and an MBA from Yale University.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <a href="playlist-jaredbrubaker.html">
+          <img class="series-thumbnail "></img>
+          <div class="content-text">
+            <div class="content-title">
+              <h3>How to Incorporate your <span class="search-highlight">Search Term</span></h3>
+            </div>
+            <div class="content-subtitle">
+              <h4>Jared Brubaker</h4>
+            </div>
+          </div>
+        </a>
+        <div class="content-expand">
+          <div class="content-expand-header">
+            <div class="arrow"></div>
+            <p>5 videos</p>
+          </div>
+          <div class="content-expand-content hide-section">
+            <a href="#"><div class="video">
+              <p class="video-title">Splitting Shares</p>
+              <p class="video-subtitle">1:11</p>
+            </div></a>
+            <a href="video-jaredbrubaker.html"><div class="video">
+              <p class="video-title">What is a Corporation?</p>
+              <p class="video-subtitle">3:30</p>
+            </div></a>
+            <a href="#"><div class="video">
+              <p class="video-title">Should you incorporate outside of the US?</p>
+              <p class="video-subtitle">3:30</p>
+            </div></a>
+            <a href="#"><div class="video">
+              <p class="video-title">Why should I incorporate as a C-Corp</p>
+              <p class="video-subtitle">3:30</p>
+            </div></a>
+            <a href="#"><div class="video">
+              <p class="video-title">How to Raise Money</p>
+              <p class="video-subtitle">3:30</p>
+            </div></a>
+          </div>
+        </div>
+      </div>
+      <div class="pagenation">
+        <div class="pagenation-back pagenation-item"></div>
+        <div class="pagenation-number pagenation-item">
+          <p>2<span> /6</span></p>
+          <div class="arrow"></div>
+        </div>
+        <div class="pagenation-forward pagenation-item"></div>
+      </div>
+    </div>
+
+    <script>
+      // alert("Javascript works!");
+      $('.menu').on('click', function() {
+        $('.menu-menu').toggleClass('hide-section');
+      });
+      $('.main').on('click', function() {
+        $('.menu-menu').addClass('hide-section');
+      });
+      $('.search').on('click', function() {
+        $('.menu, .logo, .search-box').toggleClass('hide-section');
+      });
+
+      $('.section-title-menu').on('click', function() {
+        $('.categories').toggleClass('hide-section');
+      });
+      $('.content-expand-header').on('click', function() {
+        $(this).next().toggleClass('hide-section');
+        $(this).children('.arrow').toggleClass('rotate180');
+      });
+    </script>
+  </body>
+</html>

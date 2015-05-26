@@ -1,0 +1,17 @@
+.playlist-title > h2 {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.playlist-title-column > *, .playlist-title-column > a > * {
+  margin-top: 7px;
+}
+
+.playlist-title-right {
+  text-align: right;
+  float: right;
+}
+
+.playlist-title-right > a > p {
+  text-transform: uppercase;
+}

@@ -1,0 +1,52 @@
+.video-player {
+  width: 320px;
+}
+
+h4 {
+  display: inline-block;
+}
+
+.video-length, .video-playlist-upnext, .video-playlist-vidtitle {
+  margin-top: 7px;
+}
+
+.video-playlist-title {
+  width: 100%;
+  line-height: 0.7;
+}
+
+.video-playlist-title > * {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+}
+
+.video-playlist-title > .content-title {
+  width: calc(100% - 11px);
+}
+
+.video-playlist-arrow {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #35b3de;
+  margin: 1px 2px 0 0;
+  opacity: 0.5;
+}
+
+.video-playlist-title > h3 {
+  width: calc(100% - 11px);
+}
+
+.video-playlist-nextvid {
+  margin-top: 0;
+}
+
+.video-playlist-count {
+  float: right;
+}
+
+.video-playlist-count > span {
+  opacity: 0.5;
+}

@@ -1,0 +1,10 @@
+.tweet-button {
+  background: #55ACEE;
+  text-align: center;
+  padding: 10px;
+}
+
+.tweet-button > a > h2 {
+  color: white;
+  font-weight: 500;
+}
